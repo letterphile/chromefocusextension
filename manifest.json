@@ -1,0 +1,16 @@
+{
+    "name": "Image Remover",
+    "description": "An extension to remove the images from a web page",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.linkedin.com/*","https://*.github.com/*"],
+          "js": ["content-script.js"]
+        }
+      ],
+    "permissions": ["storage", "activeTab", "scripting"]
+  }
