@@ -1,6 +1,6 @@
 {
     "name": "Image Remover",
-    "description": "An extension to remove the images from a web page",
+    "description": "An extension to remove the images and videos from a social medias",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
@@ -8,7 +8,10 @@
     },
     "content_scripts": [
         {
-          "matches": ["https://*.linkedin.com/*","https://*.github.com/*"],
+          "matches": ["https://*.linkedin.com/*","https://*.github.com/*",
+            "https://*.facebook.com/*","https://*.xvideos.com/*",
+            "https://*.instagram.com/*","https://*.fb.com/*",
+            "https://*.ig.com/*","https://*.twitter.com/*"],
           "js": ["content-script.js"]
         }
       ],
