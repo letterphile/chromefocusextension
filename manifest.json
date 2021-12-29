@@ -11,7 +11,8 @@
           "matches": ["https://*.linkedin.com/*","https://*.github.com/*",
             "https://*.facebook.com/*","https://*.xvideos.com/*",
             "https://*.instagram.com/*","https://*.fb.com/*",
-            "https://*.ig.com/*","https://*.twitter.com/*"],
+            "https://*.ig.com/*","https://*.twitter.com/*",
+            "https://*.youtube.com/*","https://*.medium.com/*"],
           "js": ["content-script.js"]
         }
       ],
