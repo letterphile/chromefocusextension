@@ -25,7 +25,7 @@ if(!document.location.href.includes('medium.com')){
 }
 else{
  
-    let mediumProfileImages = document.querySelectorAll('img.s.gz')
+    let mediumProfileImages = document.querySelectorAll('.o.n')
     let mediumProfilePageImages = document.getElementsByClassName('np')
     for (mediumProfilePageImage of mediumProfilePageImages){
         mediumProfilePageImage.remove()
