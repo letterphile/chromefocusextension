@@ -20,6 +20,7 @@ while(i<lenWhiteList){
         whiteFlag=true;
         break;
     }
+    i++;
 }
 
 if(!document.location.href.includes('medium.com') && !document.location.href.includes('whatsapp.com')){
@@ -38,7 +39,7 @@ if(!document.location.href.includes('medium.com') && !document.location.href.inc
     }
 }
 else if (whiteFlag){
-
+console.log('hello, me, a whitelisted url')
 }
 else{
  
