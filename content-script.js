@@ -12,18 +12,21 @@ let whiteListIg = ['lyitpgrs','lyit_literaturesociety',
 'careersportal.ie','mycareerplan.ie','lyit.su'];
 
 let whiteFlag = false;
-let i=0;
-const lenWhiteList = whiteListIg.length;
 
-while(i<lenWhiteList){
-    if(document.location.href.includes(whiteListIg[i])){
+for (item of lenWhiteList){
+    if(document.location.href.includes(item)){
         whiteFlag=true;
         break;
     }
-    i++;
+    
 }
 
+if (whiteFlag){
+    console.log('hello, me, a whitelisted url')
+    }
+else{
 if(!document.location.href.includes('medium.com') && !document.location.href.includes('whatsapp.com')){
+    console.log("firs if is executed !!")
     for (image of images){
         
         image.remove()
@@ -38,11 +41,9 @@ if(!document.location.href.includes('medium.com') && !document.location.href.inc
         classImage.remove()
     }
 }
-else if (whiteFlag){
-console.log('hello, me, a whitelisted url')
-}
+
 else{
- 
+    console.log("last else block is executed!!")
     //  let mediumProfileImages = document.querySelectorAll('')
     let mediumProfilePageImages = document.getElementsByClassName('cx')
     let whatsAppContactImages  = document.getElementsByClassName('_3GlyB')
@@ -59,6 +60,7 @@ else{
     // }
     
 
+}
 }
     // for (classVideo of classVideos){
     //     classVideo.remove()
