@@ -12,7 +12,7 @@
             "https://*.facebook.com/*","https://*.xvideos.com/*",
             "https://*.instagram.com/*","https://*.fb.com/*",
             "https://*.ig.com/*","https://*.twitter.com/*",
-            "https://*.youtube.com/*","https://*.medium.com/*"],
+            "https://*.youtube.com/*","https://*.medium.com/*","https://*.whatsapp.com/*"],
           "js": ["content-script.js"]
         }
       ],
