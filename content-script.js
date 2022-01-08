@@ -9,19 +9,14 @@ let classImages = document.getElementsByClassName('r-1wyyakw')
 // let classVideos = document.getElementsByClassName('r-ipm5af')
 let whiteListIg = ['lyitpgrs','lyit_literaturesociety',
 'lyit_indian_society','lyitinternational.society','lyitcareersservice','lyit_int',
-'careersportal.ie','mycareerplan.ie','lyit.su'];
+'careersportal.ie','mycareerplan.ie','lyit.su','joe.ie'];
 
 let whiteFlag = false;
 
-for (item of lenWhiteList){
-    if(document.location.href.includes(item)){
-        whiteFlag=true;
-        break;
-    }
-    
-}
 
-if (whiteFlag){
+
+
+if (whiteListIg.includes(document.location.href.split('/')[3])){
     console.log('hello, me, a whitelisted url')
     }
 else{
@@ -66,6 +61,8 @@ else{
     //     classVideo.remove()
     // }
 }
+
+
 removeCraps()
 const observer = new MutationObserver(()=>{
 
