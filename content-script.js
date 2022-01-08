@@ -9,13 +9,24 @@ let classImages = document.getElementsByClassName('r-1wyyakw')
 // let classVideos = document.getElementsByClassName('r-ipm5af')
 let whiteListIg = ['lyitpgrs','lyit_literaturesociety',
 'lyit_indian_society','lyitinternational.society','lyitcareersservice','lyit_int',
-'careersportal.ie','mycareerplan.ie','lyit.su','joe.ie'];
+'careersportal.ie','mycareerplan.ie','lyit.su'];
 
 let whiteFlag = false;
 
 
-
-
+if(document.location.href=="https://www.instagram.com/"){
+ let articles  = document.getElementsByTagName('article')
+ for (article of articles){
+    
+     if (whiteListIg.includes(article.getElementsByTagName('a')[0].innerHTML)){
+    
+}
+else{
+    article.style.visibility = "hidden";
+}
+}
+}
+else{
 if (whiteListIg.includes(document.location.href.split('/')[3])){
     console.log('hello, me, a whitelisted url')
     }
@@ -61,7 +72,7 @@ else{
     //     classVideo.remove()
     // }
 }
-
+}
 
 removeCraps()
 const observer = new MutationObserver(()=>{
